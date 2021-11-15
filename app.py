@@ -156,7 +156,7 @@ def event_handle(event):
         elif msg == "ขอเบอร์หน่อย" :
             replyObj = TextSendMessage(text="092-421-9235")
         else :
-            replyObj = TextSendMessage(text="อิหยังว้าา")
+            replyObj = TextSendMessage(text=msg)
             line_bot_api.reply_message(rtoken, replyObj)
     elif msgType == "image":
         try:
