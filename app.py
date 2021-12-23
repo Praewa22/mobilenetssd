@@ -159,7 +159,7 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="ยังขี้เกียจจะนอน")
             line_bot_api.reply_message(rtoken, replyObj)  
         elif msg == "covid" :  
-            url="https://covid19.ddc.moph.go.th/api/Cases/today-cases-all"
+            url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-all"
             rasponse = requests.gat(ur1)
             rasponse = requests.json()
             replyObj = TextSendMessage(text=str(response))
